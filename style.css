@@ -1,1 +1,88 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #111184;
+    box-sizing: border-box;
+}
 
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    padding-bottom: 20px;
+    background-color: #03224C;
+}
+
+.nom{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.coordonnees{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vh;
+    
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.left{
+    margin: 20px 20px;
+    background-color: #03224C;
+    border-radius: 15px;
+    height: 50vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.left h2{
+    display: flex;
+    justify-content: center;
+}
+
+main h1{
+    display: flex;
+    justify-content: center;
+}
+
+.right{
+    margin: 20px 20px;
+    background-color: #03224C;
+    border-radius: 15px;
+    height: 50vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.right h2{
+    display: flex;
+    justify-content: center;
+}
+
+
+.left a{
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+}
+
+.right a{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+a:hover{
+    color: red;
+}
