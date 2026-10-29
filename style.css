@@ -56,13 +56,6 @@ main h1{
 }
 
 
-.left a{
-    display: flex;
-    justify-content: center;
-    color: white;
-    
-}
-
 .right a{
     display: flex;
     justify-content: center;
