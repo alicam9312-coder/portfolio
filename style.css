@@ -45,37 +45,43 @@ main > h1 {
 
 
 .principal {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
 
-.right,
+.right {
+    grid-column: 1 / 3;
+    padding: 35px;
+    background-color: white;
+    border-left: 5px solid #526E5B;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+
 .contact,
 .CV {
+    padding: 30px;
     background-color: white;
-    padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 
 .right h2,
 .contact h2,
 .CV h2 {
-    color: #435B4B;
-    font-size: 23px;
-    border-bottom: 2px solid #829681;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
+    color: #29352F;
+    margin-bottom: 20px;
 }
-
 
 .right p,
 .contact p,
 .CV p {
-    margin-bottom: 12px;
+    line-height: 1.8;
+    margin-bottom: 15px;
 }
 
 .right a,
@@ -158,5 +164,19 @@ footer {
     .contact p,
     .CV p {
         overflow-wrap: anywhere;
+    }
+    .principal {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .right {
+        grid-column: 1;
+        padding: 22px;
+    }
+
+    .contact,
+    .CV {
+        padding: 22px;
     }
 }
