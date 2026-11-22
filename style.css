@@ -1,67 +1,162 @@
-body{
+body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: #111184;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F4F3EF;
+    color: #333A35;
     box-sizing: border-box;
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: red;
-    padding-bottom: 20px;
-    background-color: #03224C;
-}
 
-.nom{
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.coordonnees{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100vh;
-    
-}
-
-.principal{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-main h1{
-    display: flex;
-    justify-content: center;
-}
-
-.right{
-    margin: 20px 20px;
-    background-color: #03224C;
-    border-radius: 15px;
-    height: 50vh;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-.right h2{
-    display: flex;
-    justify-content: center;
-}
-
-
-.right a{
-    display: flex;
-    justify-content: center;
+header {
+    background-color: #29352F;
     color: white;
+    text-align: center;
+    padding: 35px 20px;
 }
 
-a:hover{
-    color: red;
+.nom h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.coordonnees {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    color: #E1E8E0;
+    font-size: 15px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+main > h1 {
+    text-align: center;
+    color: #435B4B;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.right,
+.contact,
+.CV {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.right h2,
+.contact h2,
+.CV h2 {
+    color: #435B4B;
+    font-size: 23px;
+    border-bottom: 2px solid #829681;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+
+.right p,
+.contact p,
+.CV p {
+    margin-bottom: 12px;
+}
+
+.right a,
+.contact a,
+.CV a {
+    color: #526E5B;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.right a:hover,
+.contact a:hover,
+.CV a:hover {
+    color: #A87950;
+    text-decoration: underline;
+}
+
+
+.CV a[download] {
+    display: inline-block;
+    background-color: #526E5B;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 7px;
+    margin-top: 8px;
+}
+
+.CV a[download]:hover {
+    background-color: #29352F;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #29352F;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+/* ADAPTATION AUX TELEPHONES */
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    .nom h1 {
+        font-size: 25px;
+    }
+
+    .coordonnees {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    main > h1 {
+        font-size: 25px;
+    }
+
+    .right,
+    .contact,
+    .CV {
+        padding: 18px;
+    }
+
+    .right h2,
+    .contact h2,
+    .CV h2 {
+        font-size: 20px;
+    }
+
+    .right p,
+    .contact p,
+    .CV p {
+        overflow-wrap: anywhere;
+    }
 }
